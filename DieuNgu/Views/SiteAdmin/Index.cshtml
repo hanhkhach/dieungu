@@ -1,0 +1,25 @@
+﻿<!--@model DieuNgu.Models.LoginViewModel-->
+@{
+    ViewBag.Title = "SiteAdmin";
+}
+<!--Reserve an responsive image bar for the banner-->
+<div class="row">
+    <img class="img-responsive" src="/images/banner-reserve-3840x380.png">
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12 col-sm-12">
+            <h1 class="page-header">
+                @ViewBag.Title
+                <small>Welcome to Dieu Ngu - Administration Section</small>
+            </h1>
+            <ol class="breadcrumb">
+                <li>
+                    @Html.ActionLink("Trang Chủ", "Index", "Home")
+                </li>
+                <li class="active">SiteAdmin</li>
+            </ol>
+        </div>
+    </div>
+    <hr/>
+</div>

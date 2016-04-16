@@ -1,0 +1,208 @@
+﻿<!DOCTYPE html>
+<html lang="vi" data-culture="vi-VN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>@ViewBag.Title </title>
+
+    <!-- Bootstrap -->
+    <link href="@Url.Content("/css/bootstrap.css")" rel="stylesheet">
+    <link href="@Url.Content("/css/modern-business.css")" rel="stylesheet">
+    <link href="@Url.Content("/css/dieungu.css")" rel="stylesheet">
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+
+    <!--Fixed-top banner and navigation bar-->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <!--Banner bar -->
+        <div class="row">
+            <img class="img-responsive" src="/images/banner-3840x330.png">
+        </div>
+
+        <!--Navigation bar-->
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <!-- use retina.js for site banner -->
+<!--                <a class="navbar-brand" href="/Home/Index"> 
+                        <img class="img-responsive" src="/images/logo.png" alt="logo.png">
+                </a>-->
+                @Html.ActionLink("My Site Logo", "Index", new { controller = "Home" }, new { @class = "navbar-brand" })
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li id="pgnews" class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Tin Tuc PG <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li id="news">
+                                @Html.ActionLink("Tin Tuc", "News", "PGNews")
+                            </li>
+                            <li class="dropdown-submenu">
+                                <a tabindex="-1" href="~/PGNews/BoardOfPatrons">Hoi Dong Chung Minh</a>
+                                <ul class="dropdown-menu">
+                                    <li><a tabindex="-1" href="~/PGNews/PontiffPrime">Duc Thuong Thu</a></li>
+                                    <li><a href="~/PGNews/BoardOfPatronOffice">Van Phong HDCM</a></li>
+                                    <li><a href="~/PGNews/BoardOfPatronMember">Thanh Vien HDCM</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown-submenu">
+                                <a tabindex="-1" href="~/PGNews/ExecutiveCouncil">Hoi Dong Dieu Hanh</a>
+                                <ul class="dropdown-menu">
+                                    <li class="dropdown-submenu">
+                                        <a href="~/PGNews/Patron">Vien Truong</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="~/PGNews/BoardOfSupervisory">Van Phong HDDH</a></li>
+                                        </ul>
+                                    </li>
+<!--                                    <li><a tabindex="-1" href="#">Next</a></li>-->
+                                </ul>
+                            </li>
+                            <li class="divider"></li>
+                            <li><a href="~/PGNews/News2011">Tin Tuc Nam 2011</a></li>
+                            <li><a href="~/PGNews/ProgramActivities">Chuong Trinh Sinh Hoat</a></li>
+                            <li><a href="~/PGNews/Video">Video</a></li>
+                            <li class="dropdown-submenu">
+                                <a tabindex="-1" href="~/PGNews/GHPGVNTNNHNSangha">Tang Doan GHPGVNTNNHN</a>
+                                <ul class="dropdown-menu">
+                                    <li><a tabindex="-1" href="~/PGNews/SangaCouncil">Hoi Dong Giao Pham</a></li>
+                                    <li><a href="~/PGNews/GHPGVNTNNHNSanghaExectiveCouncil">Hoi Dong Dieu Hanh</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="~/PGNews/GHPGVNTNSangha">Tang Doan GHPGVNTN</a></li>
+                            <li><a href="~/PGNews/TheSteeringBoardProvidence">BDH Cac Tinh Thanh</a></li>
+                            <li><a href="~/PGNews/Library">Thu Vien</a></li>
+                            <li><a href="~/PGNews/Comment">Binh Luan</a></li>
+                        </ul>
+                    </li>
+                    <li id="scriptures" class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Kinh Sach <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li class="dropdown-submenu">
+                                <a tabindex="-1" href="~/Scriptures/Dictionary">Tu Dien</a>
+                                <ul class="dropdown-menu">
+                                    <li><a tabindex="-1" href="~/Scriptures/BuddhistDictionary">Tu Dien Phat Hoc</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown-submenu">
+                                <a tabindex="-1" href="~/Scriptures/Scripture">Kinh</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="~/Scriptures/Pali">Pali</a></li>
+                                </ul>
+                            </li>
+                            <li class="divider"></li>
+                            <li><a href="~/Scriptures/Laws">Gioi Luat</a></li>
+                        </ul>
+                    </li>
+                    <li id="media" class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Media <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li id="photos">
+                                @Html.ActionLink("Hinh Anh", "Photos", "Media")
+                            </li>
+                            <li id="audio">
+                                @Html.ActionLink("Audio", "Audio", "Media")
+                            </li>
+                            <li id="video">
+                                @Html.ActionLink("Video", "Video", "Media")
+                            </li>
+                        </ul>
+                    </li>
+                    <li id="research" class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Nghien Cuu Phat Hoc <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li id="scripture">
+                                @Html.ActionLink("Kinh Sach", "Scripture", "Research")
+                            </li>
+                            <li id="philosophy">
+                                @Html.ActionLink("Triet Hoc", "Philosophy", "Research")
+                            </li>
+                            <li id="commandment">
+                                @Html.ActionLink("Gioi Luat", "Commandment", "Research")
+                            </li>
+                        </ul>
+                    </li>
+                    <li id="contact">
+                        @Html.ActionLink("Liên Lạc", "Index", "Contact")
+                    </li>
+                    <li id="other" class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Trang Khac <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li id="data">
+                                @Html.ActionLink("Tu Lieu", "PGData", "Other")
+                            </li>
+                            <li id="englist">
+                                @Html.ActionLink("Kinh Sach Anh Ngu", "English", "Other")
+                            </li>
+                            <li id="authorlist">
+                                @Html.ActionLink("Danh Sach Tac Gia", "AuthorList", "Other")
+                            </li>
+<!--                                <li id="about">
+                                @Html.ActionLink("About", "Index", "About")
+                            </li>-->
+<!--                            <li id="fullwidthpage">
+                                @Html.ActionLink("Full Width Page", "FullWidth", "Other")
+                            </li>
+                            <li id="sidebarpage">
+                                @Html.ActionLink("Sidebar Page", "Sidebar", "Other")
+                            </li>
+                            <li id="faq">
+                                @Html.ActionLink("FAQ", "Faq", "Other")
+                            </li>
+                            <li class="divider"></li>
+                            <li class="dropdown-submenu">
+                                <a tabindex="-1" href="#">More options</a>
+                                <ul class="dropdown-menu">
+                                    <li><a tabindex="-1" href="#">Second level</a></li>
+                                    <li class="dropdown-submenu">
+                                        <a href="#">More..</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#">3rd level</a></li>
+                                            <li><a href="#">3rd level</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Second level</a></li>
+                                    <li><a href="#">Second level</a></li>
+                                </ul>
+                            </li>-->
+                        </ul>
+                    </li>
+                </ul>
+                @Html.Partial("_LoginPartial")
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    @RenderBody()
+
+    <div class="container">
+        <hr>
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Copyright &copy; 2016 <a target="_blank" title="mysite.org" href="/">mysite.org. </a>&nbsp;All rights reserved</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!-- /.container -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="@Url.Content("/js/bootstrap.js")"></script>
+    <script src="@Url.Content("/js/modern-business.js")"></script>
+    @RenderSection("scripts", required: false)
+</body>
+</html>

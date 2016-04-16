@@ -1,0 +1,140 @@
+﻿@{
+    ViewBag.Title = "Video";
+}
+<div class="row">
+    <img class="img-responsive" src="/images/banner-reserve-3840x380.png">
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12">
+            <h1 class="page-header">
+                Video
+                <small>Video Homepage</small>
+            </h1>
+            <ol class="breadcrumb">
+                <li>
+                    @Html.ActionLink("Trang Chủ", "Index", "Home")
+                </li>
+                <li class="active">Video</li>
+            </ol>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-8">
+            <h1>
+                <a href="@Url.Action("Post")">Video Title</a>
+            </h1>
+            <p class="lead">
+                by <a href="#">Author Name</a>
+            </p>
+            <hr>
+            <p><i class="fa fa-clock-o"></i> Posted on August 28, 2013 at 10:00 PM</p>
+            <hr>
+            <a href="@Url.Action("Post")">
+                <img class="img-responsive" src="http://placehold.it/900x300">
+            </a>
+            <hr>
+            <p>Video description..</p>
+            <a href="@Url.Action("Post")" class="btn btn-primary">Read More <i class="fa fa-angle-right"></i></a>
+            <hr>
+            <h1>
+                <a href="@Url.Action("Post")">Another Video Title</a>
+            </h1>
+            <p class="lead">
+                by <a href="#">Author Name</a>
+            </p>
+            <hr>
+            <p><i class="fa fa-clock-o"></i> Posted on August 28, 2013 at 10:45 PM</p>
+            <hr>
+            <a href="@Url.Action("Post")">
+                <img class="img-responsive" src="http://placehold.it/900x300">
+            </a>
+            <hr>
+            <p>Video description..</p>
+            <a href="@Url.Action("Post")" class="btn btn-primary">Read More <i class="fa fa-angle-right"></i></a>
+            <hr>
+            <h1>
+                <a href="@Url.Action("Post")">Video Title</a>
+            </h1>
+            <p class="lead">
+                by <a href="#">Author Name</a>
+            </p>
+            <hr>
+            <p><i class="fa fa-clock-o"></i> Posted on August 28, 2013 at 10:45 PM</p>
+            <hr>
+            <a href="@Url.Action("Post")">
+                <img class="img-responsive" src="http://placehold.it/900x300">
+            </a>
+            <hr>
+            <p>Video description..</p>
+            <a href="@Url.Action("Post")" class="btn btn-primary">Read More <i class="fa fa-angle-right"></i></a>
+            <hr>
+            <ul class="pager">
+                <li class="previous">
+                    <a href="#">← Older</a>
+                </li>
+                <li class="next">
+                    <a href="#">Newer →</a>
+                </li>
+            </ul>
+        </div>
+        <div class="col-lg-4">
+            <div class="well">
+                <h4>Video Search</h4>
+                <div class="input-group">
+                    <input type="text" class="form-control">
+                    <span class="input-group-btn">
+                        <button type="button" class="btn btn-default">
+                            <i class="fa fa-search">Search</i>
+                        </button>
+                    </span>
+                </div>
+                <!-- /input-group -->
+            </div>
+            <!-- /well -->
+            <div class="well">
+                <h4>Popular Video Categories</h4>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <ul class="list-unstyled">
+                            <li>
+                                <a href="#video1">Video 1</a>
+                            </li>
+                            <li>
+                                <a href="#video2">Video 2</a>
+                            </li>
+                            <li>
+                                <a href="#video3">Video 3</a>
+                            </li>
+                            <li>
+                                <a href="#video4">Video 4</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6">
+                        <ul class="list-unstyled">
+                            <li>
+                                <a href="#video5">Video 5</a>
+                            </li>
+                            <li>
+                                <a href="#video6">Video 6</a>
+                            </li>
+                            <li>
+                                <a href="#video7">Video 7</a>
+                            </li>
+                            <li>
+                                <a href="#video8">Video 8</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- /well -->
+            <div class="well">
+                <h4>Side Widget Well</h4>
+                <p>Learn bootstrap's default well'sfor side widgets!</p>
+            </div>
+            <!-- /well -->
+        </div>
+    </div>
+</div>
